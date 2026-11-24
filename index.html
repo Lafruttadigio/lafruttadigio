@@ -5,16 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <meta property="og:title" content="La frutta di Giò · Galliate">
-<meta property="og:description" content="Frutta e verdura a Galliate dal 1997. Angurie intagliate, taglieri, macedonie, cesti e consegna a domicilio.">
-<meta property="og:image" content="https://lafruttadigio.it/img/anguria-paola.jpg">
+<meta property="og:description" content="Frutta e verdura a Galliate dal 1997. Cesti di Natale già pronti o su misura, prodotti tipici pugliesi e consegna a domicilio.">
+<meta property="og:image" content="https://lafruttadigio.it/img/cesti-natale.jpg">
 <meta property="og:url" content="https://lafruttadigio.it/">
 <meta name="theme-color" content="#1f8a3b">
 <style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <title>La frutta di Giò</title>
-<meta name="description" content="Frutta e verdura a Galliate dal 1997. Angurie intagliate, taglieri di frutta, macedonie, minestroni, cesti natalizi e consegna a domicilio.">
+<meta name="description" content="Frutta e verdura a Galliate dal 1997. Cesti di Natale già pronti o su misura, prodotti tipici pugliesi, consegna a domicilio e consigli per le feste.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&family=Kalam:wght@400;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&family=Kalam:wght@400;700&family=Mountains+of+Christmas:wght@700&family=Great+Vibes&display=swap">
 <style>
 /* Layout: banco del fruttivendolo — fondo verde-lime con frutta che galleggia, fasce pastello (giallo cartellino, rosa anguria), cartellini scritti a mano, sezioni da toccare */
 :root{
@@ -241,6 +242,62 @@ section{padding-block:clamp(56px,8vw,104px)}
 .thumbs img{width:100%;height:100%;object-fit:cover}
 @media (max-width:980px){.panel{grid-template-columns:1fr}}
 @media (max-width:760px){.showcase{grid-template-columns:1fr}.tabs{grid-auto-flow:column;grid-auto-columns:max-content;overflow-x:auto;padding-bottom:6px;scrollbar-width:none}.tabs button:hover{transform:none}}
+.xmas{display:grid;grid-template-columns:1fr 1.15fr;gap:clamp(20px,3vw,40px);align-items:start}
+.xmas-photos{display:grid;grid-template-columns:1fr 1fr;gap:12px;min-width:0}
+.xmas-photos figure{margin:0;border-radius:18px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/5}
+.xmas-photos figure.wide{grid-column:1/-1;aspect-ratio:16/10}
+.xmas-photos img{width:100%;height:100%;object-fit:cover}
+.xmas-opts{display:grid;gap:18px;min-width:0}
+.opt{background:var(--paper);border-radius:22px;padding:clamp(18px,2.6vw,28px);display:grid;gap:12px;box-shadow:0 2px 0 var(--line);min-width:0}
+.opt .tag{justify-self:start}
+.opt h3{font-size:1.6rem;font-weight:800}
+.opt>p{color:var(--muted)}
+.opt .blabel{color:var(--fg);font-weight:700;font-size:.95rem}
+.opt ul{margin:0;padding:0;list-style:none;display:grid;gap:6px}
+.opt li{display:flex;gap:8px;align-items:baseline}
+.opt li::before{content:"✓";color:var(--leaf);font-weight:800}
+.builder{display:grid;gap:12px;min-width:0}
+.builder .blabel,.builder label{font-weight:700;font-size:.95rem}
+.builder #cesto-count{font-weight:500;color:var(--muted)}
+.builder .two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.builder .fld{display:grid;gap:6px;min-width:0}
+.builder .field{width:100%;border:2px solid var(--line);border-radius:12px;padding:10px 12px;background:var(--bg);color:var(--fg);font:inherit;font-size:1rem;min-width:0}
+.builder .field:focus{outline:none;border-color:var(--leaf)}
+.tips{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(24px,4vw,56px);align-items:center}
+.tip-cards{display:grid;gap:14px;min-width:0}
+.tip{display:flex;gap:14px;align-items:flex-start;background:var(--paper);border-radius:18px;padding:16px 18px;transition:transform .25s cubic-bezier(.3,1.5,.5,1)}
+.tip:hover{transform:translateX(6px)}
+.tip .ico{width:54px;height:54px;flex:none;border-radius:14px;display:grid;place-items:center;background:var(--band-sun)}
+.tip .ico canvas{width:40px;height:40px}
+.tip h3{font-size:1.2rem;font-weight:800;margin-bottom:2px}
+.tip p{color:var(--muted);font-size:.98rem}
+@media (max-width:860px){.xmas,.tips{grid-template-columns:1fr}}
+@media (max-width:420px){.builder .two{grid-template-columns:1fr}}
+/* Natale */
+.xmas-band{position:relative;overflow:hidden;background-color:#a3102a;background-image:radial-gradient(rgba(255,255,255,.09) 1.5px,transparent 1.7px);background-size:26px 26px;color:#fff;padding-top:clamp(110px,12vw,130px)}
+.xmas-band::after{content:"";position:absolute;left:0;right:0;bottom:0;height:14px;background:repeating-linear-gradient(90deg,#f3c74b 0 22px,#1f8a3b 22px 44px,#fff8ec 44px 66px)}
+.xmas-band .wrap{position:relative;z-index:2}
+.ornaments{position:absolute;inset:0 0 auto 0;height:180px;z-index:1;pointer-events:none}
+.orn{position:absolute;top:0;transform-origin:24px 0;animation:swing 3.6s ease-in-out infinite alternate}
+@keyframes swing{from{transform:rotate(-5deg)}to{transform:rotate(5deg)}}
+.snow{position:absolute;inset:0;z-index:1;pointer-events:none}
+.snow span{position:absolute;top:-12px;border-radius:50%;background:#fff;animation:fall linear infinite}
+@keyframes fall{to{transform:translateY(var(--h,1400px)) translateX(var(--dx,20px))}}
+.xmas-band .sec-head .xmas-script{margin:0;font-family:"Great Vibes","Brush Script MT",cursive;font-size:clamp(1.9rem,4.2vw,2.7rem);line-height:1.1;color:#fff8ec}
+.xmas-band .xmas-title{display:flex;align-items:center;gap:12px;flex-wrap:wrap;font-family:"Mountains of Christmas",var(--f-display);font-weight:700;font-size:clamp(3rem,8vw,5.6rem);line-height:1;letter-spacing:0;color:#f3c74b;text-shadow:0 3px 0 rgba(0,0,0,.28)}
+.xmas-band .sec-head{max-width:860px}
+.xmas-band .holly{flex:none;width:clamp(48px,7vw,70px);height:auto}
+.xmas-band .sec-head p:not(.xmas-script){color:rgba(255,255,255,.92)}
+.xmas-band .opt{background:#fff8ec;color:#2a1414;box-shadow:0 18px 40px -20px rgba(0,0,0,.6)}
+.xmas-band .opt h3{color:#a3102a;font-family:"Mountains of Christmas",var(--f-display);font-size:2rem}
+.xmas-band .opt>p{color:#5a4444}
+.xmas-band .opt .blabel{color:#2a1414}
+.xmas-band .opt li::before{color:#1f7a3a}
+.xmas-band .more span{background:#fde9c8;color:#2a1414}
+.xmas-band .xmas-photos figure{border:5px solid #f3c74b;box-shadow:0 18px 40px -20px rgba(0,0,0,.6)}
+.xmas-band .handmade{color:#fff}
+.xmas-band .tag{background:#f3c74b;color:#2a1414}
+@media (max-width:700px){.orn:nth-child(n+4){display:none}.ornaments{transform:scale(.8);transform-origin:top right}}
 .handmade{margin-top:28px;display:flex;flex-wrap:wrap;align-items:center;gap:14px;font-size:1.1rem}
 .handmade .tag{font-size:1.25rem}
 
@@ -351,7 +408,7 @@ footer p{opacity:.8;font-size:.95rem}
       <a href="#storia">Chi siamo</a>
       <a href="#stagione">Di stagione</a>
       <a href="#dispensa">Prodotti</a>
-      <a href="#creazioni">Creazioni</a>
+      <a href="#cesti">Cesti</a>
       <a href="#consegna">Consegna</a>
       <a href="#recensioni">Recensioni</a>
       <a href="#dove">Dove siamo</a>
@@ -370,32 +427,28 @@ footer p{opacity:.8;font-size:.95rem}
     <div class="wrap">
       <div>
         <p class="since"><span class="tag">dal <span class="red">1997</span> a Galliate</span></p>
-        <h1 id="hero-title"><span class="w">Frutta</span> <span class="w" style="animation-delay:.08s">fresca,</span> <span class="w melon" style="animation-delay:.16s">tagliata</span> <span class="w melon" style="animation-delay:.24s">a mano,</span> <span class="w" style="animation-delay:.32s">servita</span> <span class="w" style="animation-delay:.4s">con il</span> <span class="w leaf" style="animation-delay:.48s">sorriso.</span></h1>
-        <p class="lead">Il negozio di Giorgio e Santina in Piazza Martiri della Libertà: frutta e verdura scelte ogni giorno, vino salentino, taralli pugliesi, angurie intagliate, taglieri, macedonie e cesti regalo fatti su misura.</p>
-        <div class="actions">
-          <a class="btn btn-melon" href="#creazioni">Guarda le creazioni</a>
-          <a class="btn btn-leaf" href="#consegna">Consegna a casa</a>
-        </div>
+        <h1 id="hero-title"><span class="w">Frutta</span> <span class="w" style="animation-delay:.08s">fresca,</span> <span class="w melon" style="animation-delay:.16s">scelta</span> <span class="w melon" style="animation-delay:.24s">a mano,</span> <span class="w" style="animation-delay:.32s">servita</span> <span class="w" style="animation-delay:.4s">con il</span> <span class="w leaf" style="animation-delay:.48s">sorriso.</span></h1>
+        <p class="lead">Il negozio di Giorgio e Santina in Piazza Martiri della Libertà: frutta e verdura scelte ogni giorno, vino salentino, taralli e prodotti tipici pugliesi e tanti prodotti alimentari vari.</p>
         <div class="stats">
           <div class="stat"><b data-count="years">29</b><span>anni in piazza</span></div>
           <div class="stat"><b>2</b><span>persone, una famiglia</span></div>
-          <div class="stat"><b data-count="100">100</b><span>% tagliato a mano</span></div>
+          <div class="stat"><b>4,6</b><span>★ su Google</span></div>
         </div>
       </div>
       <div class="collage" id="collage">
         <div class="inner">
-          <figure class="c3" data-open="2"><img src="img/anguria-cuore.jpg" alt="Cesto di anguria con cuore di ananas" width="825" height="1100"></figure>
+          <figure class="c3" data-open="2"><img src="img/cesto-melone.jpg" alt="Cesto regalo con melone giallo" width="825" height="1100"></figure>
           <figure class="c1" data-open="0"><img src="img/frutta-estate.jpg" alt="Banco di frutta estiva: ciliegie, pesche, albicocche e meloni" width="1100" height="825"></figure>
-          <figure class="c2" data-open="1"><img src="img/anguria-paola.jpg" alt="Anguria intagliata con il nome Paola, ripiena di ananas, mirtilli e lamponi" width="1100" height="825"></figure>
+          <figure class="c2" data-open="1"><img src="img/cesti-natale.jpg" alt="Cesti di Natale con frutta, noci e cioccolatini" width="1100" height="825"></figure>
         </div>
-        <span class="tag price">Tutto fatto a mano ♥</span>
+        <span class="tag price">Scelta a mano ♥</span>
       </div>
     </div>
   </section>
 
   <div class="ticker-wrap" aria-hidden="true"><div class="ticker"><div>
-    <span>Angurie intagliate</span><i>✶</i><span>Taglieri di frutta</span><i>✶</i><span>Macedonie fresche</span><i>✶</i><span>Minestroni pronti</span><i>✶</i><span>Cesti natalizi</span><i>✶</i><span>Consegna a Galliate</span><i>✶</i><span>Chiedi una ricetta a Giorgio</span><i>✶</i><span>Vino salentino</span><i>✶</i><span>Taralli pugliesi</span><i>✶</i>
-    <span>Angurie intagliate</span><i>✶</i><span>Taglieri di frutta</span><i>✶</i><span>Macedonie fresche</span><i>✶</i><span>Minestroni pronti</span><i>✶</i><span>Cesti natalizi</span><i>✶</i><span>Consegna a Galliate</span><i>✶</i><span>Chiedi una ricetta a Giorgio</span><i>✶</i><span>Vino salentino</span><i>✶</i><span>Taralli pugliesi</span><i>✶</i>
+    <span>Frutta e verdura fresca</span><i>✶</i><span>Cesti di Natale su misura</span><i>✶</i><span>Prodotti tipici pugliesi</span><i>✶</i><span>Consegna a Galliate</span><i>✶</i><span>Chiedi una ricetta a Giorgio</span><i>✶</i><span>Consigli per le feste</span><i>✶</i><span>Vino salentino</span><i>✶</i><span>Taralli pugliesi</span><i>✶</i>
+    <span>Frutta e verdura fresca</span><i>✶</i><span>Cesti di Natale su misura</span><i>✶</i><span>Prodotti tipici pugliesi</span><i>✶</i><span>Consegna a Galliate</span><i>✶</i><span>Chiedi una ricetta a Giorgio</span><i>✶</i><span>Consigli per le feste</span><i>✶</i><span>Vino salentino</span><i>✶</i><span>Taralli pugliesi</span><i>✶</i>
   </div></div></div>
 
   <!-- STORIA -->
@@ -406,12 +459,12 @@ footer p{opacity:.8;font-size:.95rem}
         <h2 id="storia-title" class="h2">Quasi trent'anni di frutta, chiacchiere e buonumore</h2>
         <p class="first">Abbiamo aperto le porte nel 1997, in Piazza Martiri della Libertà a Galliate. Da allora il negozio è rimasto quello che era il primo giorno: un posto dove si entra per due pesche e si esce con una battuta, un consiglio e la frutta giusta per la settimana.</p>
         <p>Ogni mattina scegliamo la merce una cassetta alla volta, guardandola e assaggiandola. Le arance di Sicilia, le ciliegie di Vignola, i meloni, le fragole italiane: sul banco va solo quello che porteremmo a casa nostra.</p>
-        <p>Negli anni sono arrivate anche le creazioni: angurie scolpite per compleanni e matrimoni, taglieri colorati, cesti regalo. Tutto nasce in negozio, con il coltello in mano e tanta pazienza.</p>
+        <p>Siamo venuti dalla Puglia, dal nostro amato Salento, portando i nostri prodotti tipici e le nostre esperienze. Affidati a noi per consigli e ricette.</p>
       </div>
       <div class="people reveal">
         <figure class="person">
           <div class="ph"><img src="img/giorgio.jpg" alt="Giorgio in negozio con mezza anguria in mano" loading="lazy" width="825" height="1100"><span class="tag">il titolare</span></div>
-          <figcaption><b>Giorgio</b><span>Il titolare e l'anima del negozio. Esperto, divertentissimo: è lui che inventa e intaglia ogni creazione. Puoi chiedergli qualsiasi info riguardo a ricette o informazioni riguardo ai prodotti.</span>
+          <figcaption><b>Giorgio</b><span>Il titolare e l'anima del negozio. Esperto, divertentissimo e sempre pieno di idee. Puoi chiedergli qualsiasi info riguardo a ricette o informazioni riguardo ai prodotti.</span>
             <a class="btn btn-melon ask" href="https://wa.me/393385473413?text=Ciao%20Giorgio%2C%20ho%20una%20domanda%3A%20" target="_blank" rel="noopener">Fai una domanda a Giorgio</a></figcaption>
         </figure>
         <figure class="person">
@@ -534,33 +587,56 @@ footer p{opacity:.8;font-size:.95rem}
     </div>
   </section>
 
-  <!-- CREAZIONI -->
-  <section id="creazioni" class="band-melon" aria-labelledby="creazioni-title">
+  <!-- CESTI DI NATALE -->
+  <section id="cesti" class="xmas-band" aria-labelledby="cesti-title">
+    <div class="ornaments" aria-hidden="true"><svg class="orn" style="right:3%;animation-delay:0s" width="48" height="112" viewBox="0 0 48 112"><line x1="24" y1="0" x2="24" y2="60" stroke="#f3c74b" stroke-width="1.5"></line><rect x="18" y="56" width="12" height="8" rx="2" fill="#f3c74b"></rect><circle cx="24" cy="84" r="20" fill="#1f8a3b"></circle><path d="M5 81 Q24 71 43 81" stroke="#fff8ec" stroke-width="2" fill="none" opacity=".55"></path><path d="M5 89 Q24 79 43 89" stroke="#fff8ec" stroke-width="2" fill="none" opacity=".35"></path><circle cx="16" cy="76" r="4" fill="#fff" opacity=".45"></circle></svg><svg class="orn" style="right:10%;animation-delay:-0.8s" width="48" height="162" viewBox="0 0 48 162"><line x1="24" y1="0" x2="24" y2="110" stroke="#f3c74b" stroke-width="1.5"></line><rect x="18" y="106" width="12" height="8" rx="2" fill="#f3c74b"></rect><polygon points="24.0,114.0 29.0,127.1 43.0,127.8 32.1,136.6 35.8,150.2 24.0,142.5 12.2,150.2 15.9,136.6 5.0,127.8 19.0,127.1" fill="#f3c74b"></polygon></svg><svg class="orn" style="right:17%;animation-delay:-1.6s" width="48" height="92" viewBox="0 0 48 92"><line x1="24" y1="0" x2="24" y2="40" stroke="#f3c74b" stroke-width="1.5"></line><rect x="18" y="36" width="12" height="8" rx="2" fill="#f3c74b"></rect><circle cx="24" cy="64" r="20" fill="#f3c74b"></circle><path d="M5 61 Q24 51 43 61" stroke="#fff8ec" stroke-width="2" fill="none" opacity=".55"></path><path d="M5 69 Q24 59 43 69" stroke="#fff8ec" stroke-width="2" fill="none" opacity=".35"></path><circle cx="16" cy="56" r="4" fill="#fff" opacity=".45"></circle></svg><svg class="orn" style="right:24%;animation-delay:-0.4s" width="48" height="142" viewBox="0 0 48 142"><line x1="24" y1="0" x2="24" y2="90" stroke="#f3c74b" stroke-width="1.5"></line><rect x="18" y="86" width="12" height="8" rx="2" fill="#f3c74b"></rect><circle cx="24" cy="114" r="20" fill="#fff8ec"></circle><path d="M5 111 Q24 101 43 111" stroke="#fff8ec" stroke-width="2" fill="none" opacity=".55"></path><path d="M5 119 Q24 109 43 119" stroke="#fff8ec" stroke-width="2" fill="none" opacity=".35"></path><circle cx="16" cy="106" r="4" fill="#fff" opacity=".45"></circle></svg><svg class="orn" style="right:31%;animation-delay:-2.1s" width="48" height="107" viewBox="0 0 48 107"><line x1="24" y1="0" x2="24" y2="55" stroke="#f3c74b" stroke-width="1.5"></line><rect x="18" y="51" width="12" height="8" rx="2" fill="#f3c74b"></rect><polygon points="24.0,59.0 29.0,72.1 43.0,72.8 32.1,81.6 35.8,95.2 24.0,87.5 12.2,95.2 15.9,81.6 5.0,72.8 19.0,72.1" fill="#f3c74b"></polygon></svg></div>
+    <div class="snow" id="snow" aria-hidden="true"></div>
     <div class="wrap">
       <div class="sec-head reveal">
-        <p class="eyebrow">Le creazioni di Giorgio</p>
-        <h2 id="creazioni-title">Per feste, eventi e regali</h2>
-        <p>Scegli una creazione per vedere le foto e chiedere un preventivo. Raccontaci l'occasione e ci pensiamo noi.</p>
+        <p class="xmas-script">Buone Feste da Giorgio e Santina</p>
+        <h2 id="cesti-title" class="xmas-title"><svg class="holly" aria-hidden="true" width="64" height="52" viewBox="0 0 64 52"><path d="M30 30 C22 14 8 16 2 8 C10 10 12 2 18 4 C18 12 26 10 30 18 C30 24 34 26 30 30Z" fill="#1f8a3b"></path><path d="M34 30 C42 14 56 16 62 8 C54 10 52 2 46 4 C46 12 38 10 34 18 C34 24 30 26 34 30Z" fill="#2fa04f"></path><circle cx="27" cy="36" r="6" fill="#e1283f"></circle><circle cx="37" cy="36" r="6" fill="#e1283f"></circle><circle cx="32" cy="44" r="6" fill="#c8102e"></circle><circle cx="25" cy="34" r="1.8" fill="#fff" opacity=".6"></circle><circle cx="35" cy="34" r="1.8" fill="#fff" opacity=".6"></circle></svg><span>Cesti di Natale</span></h2>
+        <p>Un cesto di frutta e prodotti buoni è un regalo che fa sempre piacere. Puoi prenderlo già pronto oppure comporlo insieme a noi, scegliendo uno per uno i prodotti da metterci dentro.</p>
       </div>
-      <div class="showcase">
-        <div class="tabs" role="tablist" aria-label="Creazioni" id="tabs"></div>
-        <div class="panel" role="tabpanel" id="panel" aria-live="polite">
-          <div class="stage" id="stage">
-            <img id="stage-img" src="img/anguria-dinosauro.jpg" alt="">
-            <button class="nav prev" type="button" id="st-prev" aria-label="Foto precedente">‹</button>
-            <button class="nav next" type="button" id="st-next" aria-label="Foto successiva">›</button>
-            <span class="tag" id="stage-tag">compleanni · matrimoni · feste</span>
-          </div>
-          <div class="info">
-            <h3 id="p-title">Angurie intagliate</h3>
-            <p class="desc" id="p-desc"></p>
-            <ul id="p-list"></ul>
-            <div class="thumbs" id="thumbs"></div>
-            <a class="btn btn-melon" id="p-link" href="https://wa.me/393385473413" target="_blank" rel="noopener" style="justify-self:start">Chiedi un preventivo</a>
-          </div>
+      <div class="xmas">
+        <div class="xmas-photos reveal">
+          <figure class="wide"><img src="img/cesti-regalo.jpg" alt="Cesti natalizi incartati con fiocchi rossi e blu" loading="lazy"></figure>
+          <figure><img src="img/cesti-natale.jpg" alt="Cesti con frutta, noci e cioccolatini" loading="lazy"></figure>
+          <figure><img src="img/cesto-melone.jpg" alt="Cesto regalo con melone giallo e l'etichetta del negozio" loading="lazy"></figure>
+        </div>
+        <div class="xmas-opts">
+          <article class="opt reveal">
+            <span class="tag">pronti da regalare</span>
+            <h3>Già confezionati</h3>
+            <p>Cesti già composti e incartati con il fiocco, in diverse misure. Passi in negozio, scegli quello che ti piace e lo porti via subito.</p>
+            <ul><li>Pronti in negozio</li><li>Diverse misure e prezzi</li><li>Perfetti anche all'ultimo minuto</li></ul>
+          </article>
+          <article class="opt reveal">
+            <span class="tag">fatto per te</span>
+            <h3>Su misura</h3>
+            <p>Scegli tu cosa metterci dentro e quanto spendere: noi lo componiamo e lo confezioniamo per te, con il fiocco.</p>
+            <p class="blabel">Puoi scegliere tra:</p>
+            <div class="more"><span>frutta di stagione</span><span>frutta esotica</span><span>frutta secca</span><span>vino salentino</span><span>taralli pugliesi</span><span>olio</span><span>pasta</span><span>salse e sughi</span><span>dolci natalizi</span><span>cioccolatini</span></div>
+          </article>
         </div>
       </div>
-      <p class="handmade"><span class="tag">Frutta fresca, tagliata a mano</span> Ogni creazione è preparata il giorno stesso in negozio. Ordina con qualche giorno di anticipo al <b>338 547 3413</b>.</p>
+      <p class="handmade"><span class="tag">✶ Vieni per tempo ✶</span> <span style="flex:1 1 320px;min-width:0">Sotto Natale i cesti vanno a ruba: passa in negozio con qualche giorno di anticipo per sceglierli o comporli insieme a Giorgio e Santina.</span></p>
+    </div>
+  </section>
+
+  <!-- CONSIGLI -->
+  <section id="consigli" aria-labelledby="consigli-title">
+    <div class="wrap tips">
+      <div class="reveal">
+        <p class="eyebrow">Prepari una festa?</p>
+        <h2 id="consigli-title" class="h2">Ti diamo noi i consigli giusti</h2>
+        <p style="color:var(--muted);font-size:1.12rem;margin-top:12px;max-width:46ch">Giorgio e Santina ti spiegano volentieri come preparare a casa macedonie, minestroni e decorazioni con la frutta per feste ed eventi: quale frutta scegliere, quanta prenderne e come presentarla per fare bella figura.</p>
+        <a class="btn btn-melon" style="margin-top:22px" href="https://wa.me/393385473413?text=Ciao%20Giorgio%2C%20vorrei%20un%20consiglio%20per%20una%20festa%3A%20" target="_blank" rel="noopener">Chiedi un consiglio</a>
+      </div>
+      <div class="tip-cards reveal">
+        <div class="tip"><span class="ico" data-fruit="orange"></span><div><h3>Macedonie</h3><p>Quali frutti abbinare, come tagliarli e come tenerla fresca fino al momento di servirla.</p></div></div>
+        <div class="tip"><span class="ico" data-fruit="pear"></span><div><h3>Minestroni</h3><p>Le verdure di stagione giuste e le dosi per tutta la famiglia.</p></div></div>
+        <div class="tip"><span class="ico" data-fruit="watermelon"></span><div><h3>Decorazioni con la frutta</h3><p>Idee per intagli e composizioni che rendono speciale la tavola di feste ed eventi.</p></div></div>
+      </div>
     </div>
   </section>
 
@@ -823,73 +899,25 @@ $('copy').addEventListener('click', () => {
   });
 });
 
-/* ---------- Creazioni ---------- */
-const CREAZIONI = [
-  { id:'angurie', name:'Angurie intagliate', icon:'watermelon', tag:'compleanni · matrimoni · feste',
-    desc:"Cesti, nomi, numeri, perfino dinosauri. Un'anguria scolpita a mano e riempita di frutta fresca diventa il centro della festa.",
-    list:['Nome o età intagliati','Ripiena di macedonia fresca','Pronta il giorno della festa'],
-    imgs:[['anguria-dinosauro','Anguria a forma di dinosauro per un compleanno'],['anguria-paola','Anguria con il nome Paola'],['angurie-40','Angurie con il numero 40'],['anguria-cuore','Cesto di anguria con cuore di ananas'],['anguria-onda','Anguria intagliata a zig zag'],['anguria-cesto','Cesto di anguria con manico']],
-    msg:"Ciao Giorgio, vorrei un'anguria intagliata per una festa. Data: " },
-  { id:'taglieri', name:'Taglieri di frutta', icon:'kiwi', tag:'per aperitivi e buffet',
-    desc:'Ananas a ventaglio, fichi, fragole, kiwi e frutti di bosco disposti a colori. Pronti da appoggiare sul tavolo.',
-    list:['Su vassoio pronto da servire','Frutta di stagione ed esotica','Misure per poche o tante persone'],
-    imgs:[['tagliere-frutti-bosco','Tagliere con fragole, fichi e frutti di bosco'],['tagliere-sole','Tagliere a forma di sole con ananas e pesche']],
-    msg:'Ciao Giorgio, vorrei un tagliere di frutta per circa ___ persone. Data: ' },
-  { id:'macedonie', name:'Macedonie', icon:'orange', tag:'anche in quantità',
-    desc:'Frutta di stagione tagliata a pezzetti, servita in ciotola o dentro mezza anguria.',
-    list:['Tagliata a mano al momento','In ciotola o in anguria','Ideale per pranzi e ricorrenze'],
-    imgs:[['macedonie-sei','Sei macedonie in mezze angurie'],['macedonia-fichi','Macedonia con kiwi, fichi e mirtilli'],['anguria-cesto','Macedonia in cesto di anguria']],
-    msg:'Ciao Giorgio, vorrei ordinare delle macedonie per ___ persone. Data: ' },
-  { id:'minestroni', name:'Minestroni', icon:'pear', tag:'pronti da cuocere',
-    desc:'Verdure miste lavate e tagliate a mano. Le metti in pentola e la cena è quasi pronta.',
-    list:['Verdure di stagione','Già lavate e tagliate','Chiedi a Giorgio la ricetta giusta'],
-    imgs:[['minestrone','Minestrone fresco: zucca, carote, patate, zucchine, porri, verza e sedano tagliati a mano'],['cesto-frutta-verdura','Verdure fresche: carciofi, radicchio, finocchi e peperoni']],
-    msg:'Ciao Giorgio, vorrei un minestrone pronto da cuocere. Per quante persone: ' },
-  { id:'cesti', name:'Cesti natalizi', icon:'cherry', tag:"a Natale e tutto l'anno",
-    desc:'Frutta esotica, frutta secca, dolci e vino, confezionati con fiocco. Su misura per famiglie e aziende.',
-    list:['Composti su misura e budget','Per famiglie, amici e aziende','Confezione regalo con fiocco'],
-    imgs:[['cesti-regalo','Cesti natalizi incartati con fiocchi'],['cesti-natale','Cesti con frutta, noci e cioccolatini'],['cesto-melone','Cesto regalo con melone giallo']],
-    msg:'Ciao Giorgio, vorrei un cesto regalo. Budget indicativo: ' }
-];
-let cur = 0, pic = 0;
-const tabsEl = $('tabs'), stageImg = $('stage-img');
-CREAZIONI.forEach((s, i) => {
-  const b = document.createElement('button'); b.type = 'button'; b.setAttribute('role','tab'); b.id = 'tab-' + s.id;
-  const ico = document.createElement('span'); ico.className = 'ico'; ico.append(fruitIcon(s.icon));
-  b.append(ico, document.createTextNode(s.name));
-  b.onclick = () => showCreation(i);
-  b.onkeydown = e => { if (e.key === 'ArrowDown' || e.key === 'ArrowRight'){ e.preventDefault(); showCreation((i+1)%CREAZIONI.length, true); } if (e.key === 'ArrowUp' || e.key === 'ArrowLeft'){ e.preventDefault(); showCreation((i-1+CREAZIONI.length)%CREAZIONI.length, true); } };
-  tabsEl.append(b);
-});
-function setPic(j){
-  const s = CREAZIONI[cur]; pic = (j + s.imgs.length) % s.imgs.length; const [f, alt] = s.imgs[pic];
-  stageImg.classList.add('out');
-  setTimeout(() => { stageImg.src = 'img/' + f + '.jpg'; stageImg.alt = alt; stageImg.onload = () => stageImg.classList.remove('out'); if (stageImg.complete) stageImg.classList.remove('out'); }, reduce ? 0 : 180);
-  [...$('thumbs').children].forEach((t, k) => t.setAttribute('aria-current', k === pic));
-  const multi = s.imgs.length > 1; $('st-prev').hidden = $('st-next').hidden = !multi;
-}
-function showCreation(i, focus){
-  cur = i; const s = CREAZIONI[i];
-  [...tabsEl.children].forEach((b, k) => { b.setAttribute('aria-selected', k === i); b.tabIndex = k === i ? 0 : -1; });
-  if (focus) tabsEl.children[i].focus();
-  $('p-title').textContent = s.name; $('p-desc').textContent = s.desc; $('stage-tag').textContent = s.tag;
-  $('p-list').innerHTML = s.list.map(x => `<li>${x}</li>`).join('');
-  $('p-link').href = waLink(s.msg); $('p-link').textContent = 'Chiedi un preventivo per ' + s.name.toLowerCase();
-  $('thumbs').innerHTML = '';
-  s.imgs.forEach(([f, alt], k) => { const t = document.createElement('button'); t.type = 'button'; t.setAttribute('aria-label', alt); t.innerHTML = `<img src="img/${f}.jpg" alt="" loading="lazy">`; t.onclick = () => setPic(k); $('thumbs').append(t); });
-  setPic(0);
-}
-$('st-prev').onclick = () => setPic(pic - 1);
-$('st-next').onclick = () => setPic(pic + 1);
-showCreation(0);
+document.querySelectorAll('[data-fruit]').forEach(el => el.append(fruitIcon(el.dataset.fruit)));
+
+/* ---------- Neve nella sezione di Natale ---------- */
+(function(){
+  const box = $('snow'); if (!box) return;
+  for (let i = 0; i < 40; i++){
+    const f = document.createElement('span'), sz = 3 + Math.random() * 5;
+    f.style.cssText = `left:${Math.random()*100}%;width:${sz}px;height:${sz}px;opacity:${.35 + Math.random()*.5};animation-duration:${9 + Math.random()*10}s;animation-delay:${-Math.random()*18}s;--dx:${(Math.random()*60 - 30).toFixed(0)}px`;
+    box.append(f);
+  }
+  const setH = () => box.style.setProperty('--h', (box.offsetHeight + 30) + 'px');
+  setH(); addEventListener('resize', setH);
+})();
 
 /* ---------- Galleria + lightbox ---------- */
 const GAL = [
-  ['anguria-cuore','Cesto di anguria con cuore di ananas e ombrellini'],['vetrina-offerte','Le offerte in vetrina: carciofi, tarocco, mele'],['angurie-40','Macedonie in anguria per un quarantesimo','40 anni!'],
-  ['fragole','Fragole italiane, nespole, kumquat e prugne'],['tagliere-sole','Tagliere a forma di sole'],['zucca','La zucca di Halloween di Giorgio','Halloween'],
-  ['cassette','Ciliegie di Vignola, fragole, meloni e pesche'],['anguria-cesto','Cesto di anguria con ananas e mirtilli'],['macedonia-fichi','Macedonia con kiwi e fichi'],
-  ['cesto-melone','Cesto regalo con il melone del negozio'],['cesti-natale','Cesti di Natale con noci e cioccolatini'],['anguria-onda','Anguria intagliata a onda'],
-  ['frutta-estate','Il banco della frutta estiva'],['minestrone','Minestrone fresco tagliato a mano','Minestrone'],['anguria-paola','Anguria con il nome Paola','Per Paola']
+  ['frutta-estate','Il banco della frutta estiva'],['cesti-natale','Cesti di Natale con noci e cioccolatini','Natale'],['vetrina-offerte','Le offerte in vetrina: carciofi, tarocco, mele'],
+  ['fragole','Fragole italiane, nespole, kumquat e prugne'],['cesti-regalo','Cesti regalo incartati con il fiocco'],['cassette','Ciliegie di Vignola, fragole, meloni e pesche'],
+  ['negozio-nuovo','Il negozio: frutta, verdura e prodotti tipici'],['cesto-melone','Cesto regalo con il melone del negozio'],['cesto-frutta-verdura','Carciofi, radicchio, finocchi e peperoni']
 ];
 const gal = $('gallery');
 GAL.forEach(([f, alt, tag], i) => {
@@ -936,7 +964,6 @@ shopStatus(); setInterval(shopStatus, 60000);
 const REVIEWS = [
   { nome:'Vanessa', stelle:5, quando:'su Google', testo:"Frutta e verdura ottime, personale gentile e simpatico. Chi non conosce ancora Giorgio deve affrettarsi ad andare a trovarlo perché oltre alla qualità del prodotto vi troverete un uomo simpatico e pronto a rispondere ad ogni vostra esigenza! I miei figli non possono più fare a meno delle fragole di Giò. Consiglio!" },
   { nome:'Francesca Mazziotta', stelle:5, quando:'su Google', testo:"Frutta e verdura buonissima.. negozio sempre fornito. Il proprietario Giorgio è sempre gentile, simpatico e offre sempre buoni consigli anche su come cucinare e fare ottimi piatti con la sua frutta e verdura. Non compro più frutta e verdura nei supermercati!! Ve lo consiglio, nel cuore di Galliate." },
-  { nome:'Rossella Soreca', stelle:5, quando:'su Google', testo:"Frutta e verdura ottima, per non parlare del minestrone fresco! Negozio pulito e ordinato, vetrina fornita e sempre colorata! Ottimo anche il vino e le varie sfiziosità salentine 🍷 proprietario gentile e sorridente! Consiglio vivamente!" },
   { nome:'Andrea Rizzello', stelle:5, quando:'su Google', testo:"Personale gentile, disponibile e rapido. Prodotti di altissima qualità e prodotti salentini al TOP! Locale ordinato e pulito. Consigliatissimo!!" }
 ];
 const AV = ['var(--melon)','var(--leaf)','var(--orange)','#7a4bd1'];
@@ -949,5 +976,6 @@ if (REVIEWS.length){
 }
 </script>
 
+</body></html>
 </body>
 </html>
